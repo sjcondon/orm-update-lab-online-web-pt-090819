@@ -2,12 +2,14 @@ require_relative "../config/environment.rb"
 
 class Student
   attr_accessor :id, :name, :grade
+  
+  Student.new("Sarah","12")
 
 
-  def initialize(id=nill, name, grade) 
-    @id = id
+  def initialize (name, grade, id = nil) 
     @name = name
     @grade = grade
+    @id = id
 
   end
 
